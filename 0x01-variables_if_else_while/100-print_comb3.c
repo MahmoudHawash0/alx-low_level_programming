@@ -1,32 +1,40 @@
 #include <stdio.h>
 
 /**
- *main - Entry point, print 00 to 99
- *Return: Always 0 (Success)
+ * main - print double digit combos
+ *
+ * Description: print double digit combos
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-        int n = 48;
-        int tens = 48;
+	int i, j;
 
-        while (tens <= 57)
-        {
-                while (n <= 57)
-                {
-                        putchar(tens);
-                        putchar(n);
-                        if (n != 57)
-                        {
-                                putchar(',');
-                                putchar(' ');
-                        }
-                        n++;
-                }
-                tens++;
-                n = 48;
-        }
-        putchar('\n');
+	i = 48;
+	j = 48;
 
-        return (0);
+	while (i < 58)
+	{
+		j = i + 1;
+		while (j < 58)
+		{
+			putchar(i);
+			putchar(j);
+
+			if (i < 56 || j < 57)
+			{
+				putchar(44);
+				putchar(32);
+			}
+			j++;
+		}
+
+		i++;
+	}
+
+	putchar(10);
+
+	return (0);
 }

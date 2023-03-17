@@ -1,29 +1,26 @@
 #include <stdio.h>
 
 /**
- *main - Entry point
- *Return: Always 0 (Success)
+ * main - print the letters of the alphabet
+ *
+ * Description: print the letters of the alphabet except e, q
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int n = 48;
+	int i = 0;
 
-	while (n <= 57)
+	while (i < 48)
 	{
-		putchar(n);
-		n++;
+		if (i < 10)
+			putchar(i + '0');
+		else if (i > 41)
+			putchar(i - 10 + 'A');
+		i++;
 	}
-
-	int a_to_f = 97;
-
-	while (a_to_f <= 102)
-	{
-		putchar(a_to_f);
-		a_to_f++;
-	}
-
-	putchar('\n');
+	putchar(10);
 
 	return (0);
 }
