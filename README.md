@@ -9,4 +9,4 @@ specific to the C programming language. The file names reference the concepts
 	- Language: C
 	- Ubuntu 20.04 LTS
 	- Compiler: gcc
-	- Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki).
+	- Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
